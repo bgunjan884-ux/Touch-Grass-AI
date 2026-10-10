@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f5e9">
+  <title>Touch Grass AI | Find Your Outside</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#">
+      <span class="brand-icon">🌿</span>
+      touch grass<span class="brand-ai">.ai</span>
+    </a>
+    <span class="nav-note">LESS SCROLLING. MORE LIVING.</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">✳ YOUR LITTLE PUSH TO GO OUTSIDE</span>
+        <h1>Life is better<br> <span>out there.</span></h1>
+        <p>Let AI help you find your next little adventure.
+          Close the tabs. Open the world.</p>
+        <a class="primary-link" href="#planner">Find my adventure <span>↗</span></a>
+        <div class="hero-note">☀ Small steps. Fresh air. Real moments.</div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a sunny outdoor landscape">
+        <div class="sun"></div>
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="mountain mountain-back"></div>
+        <div class="mountain mountain-front"></div>
+        <div class="hill hill-back"></div>
+        <div class="hill hill-front"></div>
+        <div class="tree tree-one">♣</div>
+        <div class="tree tree-two">♣</div>
+        <div class="flower flower-one">✿</div>
+        <div class="flower flower-two">✿</div>
+        <div class="art-label">the outside is calling ☎</div>
+      </div>
+    </section>
+
+    <section class="planner" id="planner">
+      <div class="section-heading">
+        <span class="eyebrow">01 / YOUR NEXT ADVENTURE</span>
+        <h2>What feels like you today?</h2>
+        <p>Tell us your mood. We'll help you find something real to do.</p>
+      </div>
+
+      <div class="planner-card">
+        <label for="mood">YOUR MOOD</label>
+        <select id="mood">
+          <option value="relaxed">I want to relax 🌱</option>
+          <option value="curious">I'm feeling curious 🔎</option>
+          <option value="energetic">I have energy to burn ⚡</option>
+          <option value="creative">I want to be creative 🎨</option>
+          <option value="social">I want to connect with people 🧡</option>
+        </select>
+
+        <label for="time">TIME AVAILABLE</label>
+        <div class="time-options">
+          <label class="time-choice">
+            <input type="radio" name="time" value="10 minutes">
+            <span>10 min</span>
+          </label>
+          <label class="time-choice">
+            <input type="radio" name="time" value="20 minutes" checked>
+            <span>20 min</span>
+          </label>
+          <label class="time-choice">
+            <input type="radio" name="time" value="45 minutes">
+            <span>45 min</span>
+          </label>
+          <label class="time-choice">
+            <input type="radio" name="time" value="1 hour">
+            <span>1 hour</span>
+          </label>
+        </div>
+
+        <label for="place">WHERE CAN YOU GO?</label>
+        <select id="place">
+          <option value="a garden or park">A garden or park</option>
+          <option value="my backyard or balcony">My backyard or balcony</option>
+          <option value="a safe nearby walking route">A safe nearby walking route</option>
+          <option value="anywhere outdoors with a trusted person">Somewhere outdoors with a trusted person</option>
+        </select>
+
+        <button class="primary-button" id="generateBtn">
+          Generate my adventure <span>✳</span>
+        </button>
+        <p class="privacy-note">🌱 Your choices stay in this browser.
+          AI runs locally when connected to Ollama.</p>
+      </div>
+
+      <div class="result-card" id="result" aria-live="polite">
+        <div class="result-top">
+          <span class="eyebrow">YOUR LITTLE ADVENTURE</span>
+          <span class="result-emoji">🌼</span>
+        </div>
+        <h3 id="activityTitle">A little fresh-air moment</h3>
+        <p id="activityText">Step outside, take a slow look around,
+          and notice something you usually walk past.</p>
+        <div class="activity-meta">
+          <span id="activityTime">◷ 20 minutes</span>
+          <span>♡ No scrolling required</span>
+        </div>
+        <button class="secondary-button" id="anotherBtn">Try another idea ↻</button>
+      </div>
+    </section>
+
+    <section class="challenge-section">
+      <div class="challenge-copy">
+        <span class="eyebrow">02 / THE DAILY RESET</span>
+        <h2>One small challenge.<br><span>A whole new perspective.</span></h2>
+        <p>Pick a simple outdoor mission. Complete it at your own pace
+          and keep track of your little wins.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-icon">🌻</div>
+        <span class="eyebrow">TODAY'S CHALLENGE</span>
+        <h3 id="challengeTitle">Notice five things in nature.</h3>
+        <p id="challengeText">Find a leaf, a bird, a cloud, a flower
+          and something that makes you smile.</p>
+        <button class="primary-button" id="completeBtn">I did it! ✓</button>
+        <p class="progress-label" id="progressLabel">0 challenges completed</p>
+        <button class="text-button" id="newChallengeBtn">Give me another challenge ↗</button>
+      </div>
+    </section>
+
+    <section class="why-section">
+      <span class="eyebrow">03 / WHY OPEN AI?</span>
+      <h2>Open technology.<br><span>Real-world impact.</span></h2>
+      <div class="why-grid">
+        <article>
+          <span>🔓</span>
+          <h3>Your AI, your choice</h3>
+          <p>Choose and replace a compatible open-weight model instead of being locked into one AI provider.</p>
+        </article>
+        <article>
+          <span>🔒</span>
+          <h3>Privacy by design</h3>
+          <p>With a local model, your prompts can stay on your computer instead of going to a hosted AI service.</p>
+        </article>
+        <article>
+          <span>🌍</span>
+          <h3>Built to log off</h3>
+          <p>Get an idea, head outdoors, and enjoy the world without needing to stay on the screen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="setup-note">
+      <span>⚙</span>
+      <div>
+        <strong>AI connection status</strong>
+        <p id="aiStatus">Checking local AI availability...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#">🌿 touch grass.ai</a>
+    <p>Made for the moments beyond the screen.</p>
+    <span>GO OUTSIDE. BE CURIOUS. REPEAT.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
